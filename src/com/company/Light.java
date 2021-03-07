@@ -1,7 +1,7 @@
 package com.company;
 
 public class Light {
-    Fridge fridge = new Fridge(); //создаю экземпляр класса
+    //Fridge fridge = new Fridge(); //создаю экземпляр класса
     Freezer freezer = new Freezer();
 
 
@@ -22,15 +22,16 @@ public class Light {
         this.light_2_Switch = light_2_Switch;
     }
     public boolean fridgeLight(){
-        if (fridge.doorSensor) {
-            fridge.on();
+      /*  //if (fridge.doorSensor) {
+            //fridge.on();
             //System.out.println("Свет в холодильной камере включен");
             return light_1_Switch = true;
         }
         else {
             //System.out.println("Свет в холодильной камере выключен");
             return light_1_Switch = false;
-        }
+        }*/
+        return true;
     }
     public boolean freezerLight(){
         if (freezer.doorSensor){

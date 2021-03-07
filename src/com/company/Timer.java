@@ -1,5 +1,5 @@
 package com.company;
 
-public class Timer {
-
+public interface Timer {
+    public void setTimer(long interval, Handler handler);
 }

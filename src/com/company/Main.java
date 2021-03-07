@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         ControlPanel controlPanel = new ControlPanel(); //задает температуру холодильной и морозильной камеры
 
-        Light light = new Light(); // включает и выключает подсветку при открытии двецы
+        Light light = new Light(false,false); // включает и выключает подсветку при открытии двецы
 
         Cooling cooling = new Cooling(); // включает и выключает копрессоры
                                         // поддерживает заданную температуру
@@ -15,7 +15,7 @@ public class Main {
 
         Freezer freezer = new Freezer(); // морозильная камера, все параметры
 
-        Fridge fridge = new Fridge(); // основная холодильная камера, все параметры
+        Fridge fridge = new Fridge(signal); // основная холодильная камера, все параметры
 
         cooling.coolFridge();
         System.out.println(cooling.compressor_1_Switch);
