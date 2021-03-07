@@ -7,7 +7,7 @@ public class Signal {
     boolean signal = false; // true -  сигнал вкл, false - сигнал выкл
     public boolean signal() {
         if (fridge.doorTimer) {
-            System.out.println("Сигнал! Закройте дверь!");
+            System.out.println("Сигнал");
             return signal = true;
         }
         else
